@@ -33,9 +33,9 @@ def get_luas_trapesium():
     # Calculate Keliling
     keliling = sisi_atas + sisi_bawah + garis_miring_1 + garis_miring_2
 
-    # Print
-    print(luas)
-    print(keliling)
+    # Print fstring
+    print(f"Luas : {luas}" )
+    print(f"Keliling: {keliling}")
 
 
 if __name__ == "__main__":
