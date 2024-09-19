@@ -17,7 +17,7 @@ def check_nilai():
 
         messagebox.showinfo("Evaluasi", f'Nilai: {nilai}\nEvaluasi: {result}\n')
     except ValueError:
-        messagebox.showinfo("Error","Masukkan nilai yang valid")
+        messagebox.showerror("Error","Masukkan nilai yang valid")
 
 root = tk.Tk()
 root.title("Cek Nilai")

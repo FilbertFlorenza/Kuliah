@@ -21,7 +21,7 @@ def kalkulasi_belanja():
             
         messagebox.showinfo("Total", f'Bonus: {bonus}\nDiskon: {diskon_text}\nTotal Diskon: {diskon:.1f}\nTotal Bayar: {total_bayar}')
     except ValueError:
-        messagebox.showinfo("Error","Masukkan angka yang valid")
+        messagebox.showerror("Error","Masukkan angka yang valid")
 
 root = tk.Tk()
 root.title("Cek Belanjaan")

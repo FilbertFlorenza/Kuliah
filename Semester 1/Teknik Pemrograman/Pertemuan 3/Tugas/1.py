@@ -8,7 +8,7 @@ def check_npm():
     elif npm == "130102":
         messagebox.showinfo("Nama","Rino")
     else:
-        messagebox.showinfo("Error","Tidak terdaftar")
+        messagebox.showerror("Error","Tidak terdaftar")
 
 root = tk.Tk()
 root.title("Cek NPM")
