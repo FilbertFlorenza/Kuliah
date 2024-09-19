@@ -4,13 +4,13 @@ from tkinter import messagebox
 def check_nilai():
     try:
         nilai = int(entry.get())
-        if nilai >=86 and nilai <= 100:
+        if nilai >=86:
             result = "Sangat Baik"
-        elif nilai >= 76 and nilai <= 85:
+        elif nilai >= 76:
             result = "Baik"
-        elif nilai >= 66 and nilai <= 75:
+        elif nilai >= 66:
             result = "Cukup"
-        elif nilai >= 56 and nilai <= 65:
+        elif nilai >= 56:
             result = "Kurang"
         else:
             result = "Gagal"
