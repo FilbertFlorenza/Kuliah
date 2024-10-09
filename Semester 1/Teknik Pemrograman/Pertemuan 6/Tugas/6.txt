@@ -1,0 +1,5 @@
+Aplikasi input nama kedalam excel
+    1. Aplikasi akan terus meminta input nama
+    2. Nama dimasukkan ke dalam array
+    3. Jika user menekan CTRL + C, maka aplikasi akan berhenti meminta input nama
+    4. Aplikasi akan memasukkan nama-nama dari array ke dalam excel melalui looping
