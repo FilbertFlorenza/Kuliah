@@ -64,19 +64,19 @@ window.title("Teknik Pemrograman Pertemuan 10")
 
 #Input Frame
 inputFrame = ttk.Frame(window)
-inputFrame.grid(row=0, column=0, columnspan=2, pady=5)
+inputFrame.grid(row=0, column=0, columnspan=2, pady=5, sticky='w')
 
 #Input Labels
-ttk.Label(window, text="Kode Kategori", bootstyle="light").grid(row=0, column=0, padx=10, pady=5, sticky="w")
-ttk.Label(window, text="Nama", bootstyle="light").grid(row=1, column=0, padx=10, pady=5, sticky="w")
-ttk.Label(window, text="Jenis", bootstyle="light").grid(row=2, column=0, padx=10, pady=5, sticky="w")
+ttk.Label(inputFrame, text="Kode Kategori", bootstyle="light").grid(row=0, column=0, padx=10, pady=5, sticky="w")
+ttk.Label(inputFrame, text="Nama", bootstyle="light").grid(row=1, column=0, padx=10, pady=5, sticky="w")
+ttk.Label(inputFrame, text="Jenis", bootstyle="light").grid(row=2, column=0, padx=10, pady=5, sticky="w")
 
 #Input Entry
 entryWidth = 40
 jenisComboValues = ("Buku", "Elektronik", "Fashion", "Makanan & Minuman", "Peralatan Olahraga", "Peralatan Otomotif")
-kodeKategoriEntry = ttk.Entry(window, width=entryWidth,)
-namaEntry = ttk.Entry(window, width=entryWidth)
-jenisCombo = ttk.Combobox(window, width=entryWidth - 2, values=jenisComboValues)
+kodeKategoriEntry = ttk.Entry(inputFrame, width=entryWidth,)
+namaEntry = ttk.Entry(inputFrame, width=entryWidth)
+jenisCombo = ttk.Combobox(inputFrame, width=entryWidth - 2, values=jenisComboValues)
 
 kodeKategoriEntry.grid(row=0, column=1, padx=10, pady=5, sticky="w")
 namaEntry.grid(row=1, column=1, padx=10, pady=5, sticky="w")
