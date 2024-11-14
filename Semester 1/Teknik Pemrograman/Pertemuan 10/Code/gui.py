@@ -46,7 +46,7 @@ def update_data():
     kodeKategoriEntry.delete(0, ttk.END)
     namaEntry.delete(0, ttk.END)
     jenisCombo.set("")
-    
+
 def delete_data():
     # Get list selection
     selected = tree.focus()
@@ -59,7 +59,7 @@ def delete_data():
     tree.delete(selected)
 
 #Initialize window
-window = ttk.Window(themename="darkly")  # Choose a theme like "flatly", "darkly", etc.
+window = ttk.Window(themename="darkly")
 window.title("Teknik Pemrograman Pertemuan 10")
 
 #Input Frame
