@@ -1,5 +1,4 @@
-# run 
-# pip install ttkbootstrap
+# run pip install ttkbootstrap di terminal sebelum dijalanin
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 from ttkbootstrap.dialogs import Messagebox
@@ -12,7 +11,7 @@ def save_data():
     jenis = jenisCombo.get()
     
     # Check if input is empty
-    if(not kodeKategori and not nama and not jenis):
+    if(kodeKategori == '' or nama == '' or jenis == ''):
         Messagebox.show_error("Masukkan input yang benar")
         return False
     
@@ -32,7 +31,7 @@ def update_data():
     selected = tree.focus()
 
     # Check if input is empty
-    if(not kodeKategori and not nama and not jenis):
+    if(kodeKategori == '' or nama == '' or jenis == ''):
         Messagebox.show_error("Masukkan input yang benar")
         return False
     
