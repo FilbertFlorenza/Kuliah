@@ -6,9 +6,9 @@ from ttkbootstrap.dialogs import Messagebox
 # Save Data Function
 def save_data():
     # Get entry values
-    kodeKategori = kodeKategoriEntry.get()
-    nama = namaEntry.get()
-    jenis = jenisCombo.get()
+    kodeKategori = kodeKategoriEntry.get().strip()
+    nama = namaEntry.get().strip()
+    jenis = jenisCombo.get().strip()
     
     # Check if input is empty
     if(kodeKategori == '' or nama == '' or jenis == ''):
@@ -25,9 +25,9 @@ def save_data():
 
 def update_data():
     # Get entry values
-    kodeKategori = kodeKategoriEntry.get()
-    nama = namaEntry.get()
-    jenis = jenisCombo.get()
+    kodeKategori = kodeKategoriEntry.get().strip()
+    nama = namaEntry.get().strip()
+    jenis = jenisCombo.get().strip()
     selected = tree.focus()
 
     # Check if input is empty
