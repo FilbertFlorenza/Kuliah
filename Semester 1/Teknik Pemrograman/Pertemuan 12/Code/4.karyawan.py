@@ -1,4 +1,4 @@
-#Made by Stanley & Ibnu
+#Made by Stanley and Ibnu
 import tkinter as tk
 from tkinter import messagebox
 
